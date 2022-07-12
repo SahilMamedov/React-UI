@@ -15,26 +15,9 @@ import { Button, ListItem } from '@mui/material';
 
 
 export default function Goods({ImageUrl,ProductAboutInformation,ProductPrice}) {
-    // const [data,setData] = useState([])
-    // useEffect (() => {
 
-    //     axios.get('https://62cc91b58042b16aa7d15551.mockapi.io/goods')
-    //     .then(function(products){
-    //         setData(products.data)
-    //     })
-    // },[])
+
     
-
-    const HandleClick =()=>{
-        // axios.get('https://62cc91b58042b16aa7d15551.mockapi.io/goods')
-        // .then(function(res){
-        // res.data.forEach(item => {
-        //     console.log(item.id);
-        // });
-        // })
-        //console.log();
-      //  data.map(item => console.log(item.id));
-    }
 
   return (
     
@@ -71,7 +54,7 @@ export default function Goods({ImageUrl,ProductAboutInformation,ProductPrice}) {
         
         
         
-      <Button onClick={HandleClick} variant="contained">Sumbit</Button>
+      <Button variant="contained">Sumbit</Button>
       </Typography>
     </Card>
   );
