@@ -1,8 +1,13 @@
 import { useParams } from "react-router-dom"
 import {useEffect, useState} from "react"
 import axios from "axios"
-
+import styled from "styled-components"
+import { border, color } from "@mui/system"
 export default function FullInfoProduct() {
+
+
+
+
   const {id} = useParams();
   const [data,setData] =useState([])
   useEffect (() => {
@@ -16,7 +21,7 @@ export default function FullInfoProduct() {
 },[])
 
  return(
-  <div className="container d-flex justify-content-center" >
+  <>
     
   <div>
   <img src={data.ImageUrl} alt="" />
@@ -28,9 +33,9 @@ export default function FullInfoProduct() {
   <span className="d-flex justify-content-center">
   <span>{data.ProductPrice}</span>
   </span>
-  
+
   </div>
-  </div>
+  </>
  )
 
 }
