@@ -1,0 +1,45 @@
+[
+    {
+        "id":1,
+        "ProductAboutInformation":"Product haqqinda melumat",
+        "ProductPrice":53.54,
+        "ImageUrl":"https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-59-346x310.jpg"
+
+    },
+    {
+        "id":2,
+        "ProductAboutInformation":"Product haqqinda melumat",
+        "ProductPrice":55.14,
+        "ImageUrl":"https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg"
+
+    },
+    {
+        "id":3,
+        "ProductAboutInformation":"Product haqqinda melumat",
+        "ProductPrice":23.64,
+        "ImageUrl":"https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-60-346x310.jpg"
+
+    },
+    {
+        "id":4,
+        "ProductAboutInformation":"Product haqqinda melumat",
+        "ProductPrice":42.54,
+        "ImageUrl":"https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-46-346x310.jpg"
+
+    },
+    {
+        "id":5,
+        "ProductAboutInformation":"Product haqqinda melumat",
+        "ProductPrice":65.25,
+        "ImageUrl":"https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-45-346x310.jpg"
+
+    },
+    {
+        "id":6,
+        "ProductAboutInformation":"Product haqqinda melumat",
+        "ProductPrice":32.37,
+        "ImageUrl":"https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+
+    }
+
+]

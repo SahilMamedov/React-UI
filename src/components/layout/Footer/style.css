@@ -1,0 +1,16 @@
+footer{
+    padding-top: 50px;
+    margin-top: 70px;
+    color: rgb(113, 119, 142);
+    background-color: rgb(222, 226, 230);
+}
+footer ul li{
+    padding: 3px 0;
+    list-style: none;
+}
+footer h6{
+    padding-left: 40px;
+}
+.footer-content{
+    margin: 0 30px;
+}
