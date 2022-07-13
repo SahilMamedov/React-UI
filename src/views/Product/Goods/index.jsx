@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -8,34 +7,13 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import styled from 'styled-components'
-import { ThemeProvider } from 'styled-components';
+import { Button } from '../styled';
 
-const theme= {
- 
-  backgorund:"purple",
-
-  colors:{
-    white:"white",
-    black:"black",
-  }
-  
-  
-}
 
 export default function Goods({ImageUrl,ProductAboutInformation,ProductPrice}) {
 
-  const Button=styled.button`
-  padding: 8px 40px;
-  border-radius:8px;
-  color:${props=>props.theme.colors.white};
-  background:${props=>props.theme.backgorund};
-  margin:5px;
-  `
-    
-
   return (
-    <ThemeProvider theme={theme} >
+    
      
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
@@ -67,12 +45,9 @@ export default function Goods({ImageUrl,ProductAboutInformation,ProductPrice}) {
         </Typography>
       </CardContent>
       <Typography className='d-flex justify-content-center'>
-        
-        
-        
-      <Button>Click me</Button>
+  
+      <Button>Button</Button>
       </Typography>
     </Card>
-    </ThemeProvider>
   );
     }

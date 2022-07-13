@@ -1,11 +1,13 @@
 
-
+import { Container } from "./styled"
 export default function Contact () {
   return (
     <div>
-      <h1>
+     <Container>
+     <h1>
         Contact Page
       </h1>
+     </Container>
     </div>
   )
 }
