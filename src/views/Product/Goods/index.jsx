@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -9,18 +8,35 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { Button, ListItem } from '@mui/material';
+import styled from 'styled-components'
+import { ThemeProvider } from 'styled-components';
 
+const theme= {
+ 
+  backgorund:"purple",
 
-
+  colors:{
+    white:"white",
+    black:"black",
+  }
+  
+  
+}
 
 export default function Goods({ImageUrl,ProductAboutInformation,ProductPrice}) {
 
-
+  const Button=styled.button`
+  padding: 8px 40px;
+  border-radius:8px;
+  color:${props=>props.theme.colors.white};
+  background:${props=>props.theme.backgorund};
+  margin:5px;
+  `
     
 
   return (
-    
+    <ThemeProvider theme={theme} >
+     
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
@@ -54,8 +70,9 @@ export default function Goods({ImageUrl,ProductAboutInformation,ProductPrice}) {
         
         
         
-      <Button variant="contained">Sumbit</Button>
+      <Button>Click me</Button>
       </Typography>
     </Card>
+    </ThemeProvider>
   );
     }

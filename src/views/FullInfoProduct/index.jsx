@@ -1,11 +1,8 @@
 import { useParams } from "react-router-dom"
 import {useEffect, useState} from "react"
 import axios from "axios"
-import styled from "styled-components"
 import { border, color } from "@mui/system"
 export default function FullInfoProduct() {
-
-
 
 
   const {id} = useParams();
@@ -14,16 +11,15 @@ export default function FullInfoProduct() {
 
     axios.get(`https://62cc91b58042b16aa7d15551.mockapi.io/goods/${id}`)
     .then(function(products){
-      //console.log(products.data);
         setData(products.data)
     })
 
 },[])
 
  return(
-  <>
+  <div className="d-flex justify-content-center">
     
-  <div>
+  <div >
   <img src={data.ImageUrl} alt="" />
   <div className="d-flex justify-content-center">
   <p>{data.ProductAboutInformation}</p>
@@ -35,7 +31,7 @@ export default function FullInfoProduct() {
   </span>
 
   </div>
-  </>
+  </div>
  )
 
 }
