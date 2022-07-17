@@ -1,5 +1,4 @@
-import React from 'react'
-import  {Container}  from "./styled"
+import { Container } from "../../components/shared/Container/Container"
 
 export default function Home() {
 

@@ -1,13 +1,7 @@
-import { space, color, layout } from "styled-system";
 import styled from "styled-components";
+import Buttons from "../../components/shared/Button/Button";
 
-export const Container = styled.div`
-  margin: 0 280px;
-  display: ${(props) => props.theme.display.flex};
-  justify-content: ${(props) => props.theme.display.JustifyContentCenter};
+export const ButtonContact = styled(Buttons)`
+  background-color: red; 
 `;
-export const ContactButton = styled.button(
-color,
-layout,
-space,
-)
+// sahredden goturduyum buttonu burda istediyim ozelliyi deyishdire bilmirem
